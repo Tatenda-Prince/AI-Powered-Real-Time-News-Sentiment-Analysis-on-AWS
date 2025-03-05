@@ -102,7 +102,7 @@ terraform validate
 The command should generate a success message, confirming that it is valid, as demonstrated below.
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/0de5c67f631048ba65f3dae74481c2ac58fc4597/screanshots/Screenshot%202025-03-05%20182609.png)
 
 
 2.4.Let’s now execute the following command to generate a list of all the modifications that Terraform will apply.
