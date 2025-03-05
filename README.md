@@ -66,7 +66,7 @@ A financial investing firm uses the AI-Powered News Sentiment Analysis System to
 1.1.Clone this repository to your local machine.
 
 ```language
-git clone https://github.com/Tatenda-Prince/SentimentStream-AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS.git
+git clone https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS.git
 ```
 
 
