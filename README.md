@@ -172,7 +172,7 @@ aws lambda invoke --function-name fetch_news --payload '{"timestamp": "20250305"
 cat response.json
 ```
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/21bb672be4e2db638f789873b9831cc651a03bfc/screanshots/Screenshot%202025-03-05%20140408.png)
 
 
 Now verify if the news articles json fiel is successfully stored in the S3 bucket as shown below-
