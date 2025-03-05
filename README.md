@@ -36,15 +36,15 @@ Why It Matters? Businesses need real-time insights on market trends, competitor 
 
 ## Technologies Used
 
-AWS Lambda – Serverless compute for news fetching, querying sentiments & sentiment analysis
+1.AWS Lambda – Serverless compute for news fetching, querying sentiments & sentiment analysis
 
-Amazon S3 – Stores raw news articles.
+1.Amazon S3 – Stores raw news articles.
 
-AWS Comprehend – AI-based sentiment analysis.
+3.AWS Comprehend – AI-based sentiment analysis.
 
-Amazon DynamoDB – NoSQL database for fast sentiment lookups.
+4.Amazon DynamoDB – NoSQL database for fast sentiment lookups.
 
-Terraform – Infrastructure as Code for automated AWS provisioning.
+4.Terraform – Infrastructure as Code for automated AWS provisioning.
 
 
 ## Use Case
@@ -59,6 +59,15 @@ A financial investing firm uses the AI-Powered News Sentiment Analysis System to
 2.AWS Account with configured Access key and Secret access key.
 
 3.Terraform & AWS CLI installed (if using Terraform for infrastructure)
+
+
+## Step 1: Clone the Repository
+
+1.1.Clone this repository to your local machine.
+
+```language
+git clone 
+```
 
 
 
