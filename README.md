@@ -178,7 +178,7 @@ cat response.json
 Now verify if the news articles json fiel is successfully stored in the S3 bucket as shown below-
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/ea68c007a97c6b9d1b951bf51eb147665785ce26/screanshots/Screenshot%202025-03-05%20140759.png)
 
 
 
