@@ -66,8 +66,251 @@ A financial investing firm uses the AI-Powered News Sentiment Analysis System to
 1.1.Clone this repository to your local machine.
 
 ```language
-git clone 
+git clone https://github.com/Tatenda-Prince/SentimentStream-AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS.git
 ```
+
+
+## Step 2 : Run Terraform workflow to initialize, validate, plan then apply
+
+2.1.Terraform will create:
+AWS Lambda functions (News Fetching, Sentiment Analysis, Querying)
+Amazon S3 bucket (for storing news articles)
+AWS Comprehend integration (for sentiment analysis)
+Amazon DynamoDB table (for sentiment storage & queries)
+
+2.2.In your local terraform visual code environment terminal, to initialize the necessary providers, execute the following command in your environment terminal.
+
+```Language
+terraform init
+```
+
+Upon completion of the initialization process, a successful prompt will be displayed, as shown below.
+
+
+![image_alt]()
+
+
+
+2.3.Next, let’s ensure that our code does not contain any syntax errors by running the following command
+
+```Language
+terraform validate
+```
+
+The command should generate a success message, confirming that it is valid, as demonstrated below.
+
+
+![image_alt]()
+
+
+2.4.Let’s now execute the following command to generate a list of all the modifications that Terraform will apply.
+
+```Language
+terraform plan
+```
+
+![image_alt]()
+
+The list of changes that Terraform is anticipated to apply to the infrastructure resources should be displayed. The “+” sign indicates what will be added, while the “-” sign indicates what will be removed.
+
+
+2.5.Now, let’s deploy this infrastructure! Execute the following command to apply the changes and deploy the resources. Note — Make sure to type “yes” to agree to the changes after running this command.
+
+
+```Language
+terraform apply
+```
+
+Terraform will initiate the process of applying all the changes to the infrastructure. Kindly wait for a few seconds for the deployment process to complete.
+
+![image_alt]()
+
+
+## Success
+
+The process should now conclude with a message indicating “Apply complete”, stating the total number of added, modified, and destroyed resources, accompanied by several resources.
+
+
+![image_alt]()
+
+
+
+## Step 3: Verify creation of our resources
+
+3.1.In the AWS Management Console, head to the AWS Lambda dashboard and verify that you three lambda function that were successfully created.
+
+![image_alt]()
+
+
+
+3.2.In the AWS Management Console, head to the Amazon S3 dashboard and verify that a S3 bucket was successfully created as shown below 
+
+![image_alt]()
+
+
+3.3.In the AWS Management Console, head to the Amazon DynamoDB dashboard and verify that a table was successfully created as shown below
+
+![image_alt]()
+
+
+Now that all our resources we will move on to step 4, testing part invoking lambda function to fetch news articles from the external API and store the result in our S3 bucket.
+
+
+
+## Step 4: Testing the System
+
+
+4.1.Fetch News Articles
+
+Manually trigger the `fetch_news` to fetch the articles form the external API.NOTE Use the AWS CLI.
+
+```langauge
+aws lambda invoke --function-name fetch_news --payload '{"timestamp": "20250305"}'  response.json
+
+cat response.json
+```
+
+![image_alt]()
+
+
+Now verify if the news articles json fiel is successfully stored in the S3 bucket as shown below-
+
+
+![image_alt]()
+
+
+
+Now download the news articles json file to your local machine.
+
+
+![image_alt]()
+
+
+
+4.2.Analyze Sentiment
+
+Manually trigger the sentiment analysis Lambda in order for amazon comprehend to run analysis on the article stores in Amazon S3 and store the results in DynamoDB.
+
+```langauge
+aws lambda invoke --function-name analyze_sentiment --payload '{"file_key": "news_20250305.json"}' response.json
+
+cat response.json
+```
+
+![image_alt]()
+
+
+In AWS Managemaent Console, head to DynamoDB under tables click the `NewsSentiment` tables on the right hand panel click on `Explore items` the results should be as shown below-
+
+
+![image_alt]()
+
+
+
+
+![image_alt]()
+
+
+
+Now that that the news article were successfully analyzed and store in DynamoDB for fast lookup, Now lets Query Sentiment Trends
+
+
+
+4.3.Query Sentiment Trends
+
+Now lets retrieve sentiment trends from DynamoDB for fast lookup.
+
+1.First We will that query the `NEGATIVE` sentiment
+
+
+```langauge
+aws lambda invoke --function-name query_sentiment --payload '{"sentiment": "NEGATIVE", "keyword": "China"}' response.json
+
+cat response.json | jq '.body | fromjson'
+```
+
+
+
+![image_alt]()
+
+
+
+2.Second We will that query the `POSITVE` sentiment
+
+```langauge
+aws lambda invoke --function-name query_sentiment --payload '{"sentiment": "POSITIVE", "keyword": "China"}' response.json
+
+cat response.json | jq '.body | fromjson'
+```
+
+
+
+![image_alt]()
+
+
+
+3.Third we will query the `NUETRAL` sentiment
+
+
+```langauge
+aws lambda invoke --function-name query_sentiment --payload '{"sentiment": "NUETRAL", "keyword": "MacBook Air"}' response.json
+
+cat response.json | jq '.body | fromjson'
+```
+
+
+![image_alt]()
+
+
+
+## Future Enhancements
+
+1.Multi-Source News Integration – Extend support beyond NewsAPI (e.g., Twitter, RSS feeds).
+
+2.Time Event Triggering – Implement AWS EventBridge to automatically trigger alerts on sentiment spikes.
+
+3.Visualization Dashboard – Use Amazon QuickSight or Grafana to create sentiment trend dashboards.
+
+
+
+## Congratulations
+
+We have succesfully created a fully serverless AI-driven system using AWS services like Lambda, S3, Comprehend, and DynamoDB.
+Implementing Terraform for Infrastructure as Code (IaC), making deployment seamless and scalable.
+Managing real-time data ingestion and processing, critical for businesses that rely on timely insights.
+Creating a queryable sentiment analysis system, allowing users to extract meaningful trends.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
