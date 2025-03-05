@@ -125,7 +125,7 @@ terraform apply
 
 Terraform will initiate the process of applying all the changes to the infrastructure. Kindly wait for a few seconds for the deployment process to complete.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/705b649102158af17a5909896bd66590f92d3a05/screanshots/Screenshot%202025-03-05%20182948.png)
 
 
 ## Success
