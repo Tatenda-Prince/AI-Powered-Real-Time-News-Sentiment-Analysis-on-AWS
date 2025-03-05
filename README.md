@@ -1,4 +1,4 @@
-# SentimentStream-AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS
+# AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS
 
 ## Technical Architecture
 
