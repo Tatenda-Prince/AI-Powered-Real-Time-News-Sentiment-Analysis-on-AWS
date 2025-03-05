@@ -210,7 +210,7 @@ In AWS Managemaent Console, head to DynamoDB under tables click the `NewsSentime
 
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/92187710321f95c5d68df7e4fcea41d99aec5ee9/screanshots/Screenshot%202025-03-05%20142046.png)
 
 
 
