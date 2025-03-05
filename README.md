@@ -185,7 +185,7 @@ Now verify if the news articles json fiel is successfully stored in the S3 bucke
 Now download the news articles json file to your local machine.
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/ceb5963fc89953627a312cd3d0629b9728dc5038/screanshots/Screenshot%202025-03-05%20140854.png)
 
 
 
