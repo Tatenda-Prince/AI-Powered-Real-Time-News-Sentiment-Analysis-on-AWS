@@ -147,7 +147,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.2.In the AWS Management Console, head to the Amazon S3 dashboard and verify that a S3 bucket was successfully created as shown below 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/ff7334d02dce49b196bcf453933f0ae799370578/screanshots/Screenshot%202025-03-05%20183704.png)
 
 
 3.3.In the AWS Management Console, head to the Amazon DynamoDB dashboard and verify that a table was successfully created as shown below
