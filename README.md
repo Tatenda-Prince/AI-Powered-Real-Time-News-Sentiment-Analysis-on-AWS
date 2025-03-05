@@ -199,7 +199,7 @@ aws lambda invoke --function-name analyze_sentiment --payload '{"file_key": "new
 cat response.json
 ```
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/502a1be4b1d0c6af6420799ca53550ab86a6cb83/screanshots/Screenshot%202025-03-05%20141404.png)
 
 
 In AWS Managemaent Console, head to DynamoDB under tables click the `NewsSentiment` tables on the right hand panel click on `Explore items` the results should be as shown below-
