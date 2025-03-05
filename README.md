@@ -205,7 +205,7 @@ cat response.json
 In AWS Managemaent Console, head to DynamoDB under tables click the `NewsSentiment` tables on the right hand panel click on `Explore items` the results should be as shown below-
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/7e26eece47718fd75305e92e75ebc649751bc97d/screanshots/Screenshot%202025-03-05%20142011.png)
 
 
 
