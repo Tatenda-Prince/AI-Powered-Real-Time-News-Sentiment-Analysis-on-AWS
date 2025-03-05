@@ -261,7 +261,7 @@ cat response.json | jq '.body | fromjson'
 ```
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/35841f4602f4e3e8f5a36e7ba015fa90b7ce2869/screanshots/Screenshot%202025-03-05%20144900.png)
 
 
 
