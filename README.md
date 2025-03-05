@@ -152,7 +152,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.3.In the AWS Management Console, head to the Amazon DynamoDB dashboard and verify that a table was successfully created as shown below
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/69ff84f6dc036ac41fa67fc2a56e83b840c45b1d/screanshots/Screenshot%202025-03-05%20183728.png)
 
 
 Now that all our resources we will move on to step 4, testing part invoking lambda function to fetch news articles from the external API and store the result in our S3 bucket.
