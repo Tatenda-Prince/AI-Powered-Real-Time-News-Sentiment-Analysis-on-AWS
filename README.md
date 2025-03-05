@@ -141,7 +141,7 @@ The process should now conclude with a message indicating “Apply complete”, 
 
 3.1.In the AWS Management Console, head to the AWS Lambda dashboard and verify that you three lambda function that were successfully created.
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/a04b5fd5e5958ec4f1d01e5ee487e4f12ec17b8d/screanshots/Screenshot%202025-03-05%20183627.png)
 
 
 
