@@ -133,7 +133,7 @@ Terraform will initiate the process of applying all the changes to the infrastru
 The process should now conclude with a message indicating “Apply complete”, stating the total number of added, modified, and destroyed resources, accompanied by several resources.
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/e91a2277aab51edd3c892d84e6a5178337b85ae6/screanshots/Screenshot%202025-03-05%20183024.png)
 
 
 
