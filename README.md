@@ -3,6 +3,8 @@
 ## Technical Architecture
 
 
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/2a20d4135523e8a2043be772779df615e5b71a0d/screanshots/Screenshot%202025-03-05%20180518.png)
+
 
 ## Project Overview
 
