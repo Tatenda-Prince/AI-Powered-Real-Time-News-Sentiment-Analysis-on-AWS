@@ -89,7 +89,7 @@ terraform init
 Upon completion of the initialization process, a successful prompt will be displayed, as shown below.
 
 
-![image_alt]()
+![image_alt](https://github.com/Tatenda-Prince/AI-Powered-Real-Time-News-Sentiment-Analysis-on-AWS/blob/29cc005d698bea6c1a3f81afdf6b165dd11e2b65/screanshots/Screenshot%202025-03-05%20182529.png)
 
 
 
